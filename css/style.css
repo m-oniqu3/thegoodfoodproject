@@ -26,7 +26,7 @@ button {
   background-color: #84b121;
   border: none;
   border-radius: 10px;
-  padding: 1rem 1.5rem;
+  padding: 0.8rem 1.5rem;
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 600;
@@ -86,12 +86,16 @@ header .intro p.intro-para {
 }
 
 main {
+  overflow: hidden;
+}
+
+main .about {
+  padding: 2rem 0;
   background-image: url("https://images.unsplash.com/photo-1579492450119-80542d516179?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
   background-position: center;
   background-size: contain;
   background-repeat: repeat;
   height: auto;
-  overflow: hidden;
 }
 
 main .picture {
@@ -99,7 +103,6 @@ main .picture {
 }
 
 main .picture img {
-  padding: 2rem 0;
   width: 100%;
 }
 
@@ -136,14 +139,14 @@ main .white-plate img {
 }
 
 main .offers {
-  margin: 2rem 0;
+  margin-top: 2rem;
 }
 
 main .offers .offer-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 1rem 0;
+  padding: 1rem 0;
 }
 
 main .offers .offer-item .icon {
@@ -160,9 +163,31 @@ main .offers .offer-item .offer-heading {
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 1px;
+  margin-top: 1rem;
 }
 
 main .offers .offer-item p.para {
   margin: 0.3rem 0;
+}
+
+main .download button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .download button .icon {
+  width: 2rem;
+  padding-left: 0.5rem;
+}
+
+main .download button .icon img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
