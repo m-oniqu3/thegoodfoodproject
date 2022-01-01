@@ -71,26 +71,34 @@ main {
   background-image: url("https://images.unsplash.com/photo-1579492450119-80542d516179?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
   background-position: center;
   background-size: contain;
-  background-repeat: repeat-y;
+  background-repeat: repeat;
   height: auto;
   overflow: hidden;
 
   .picture {
     width: 100%;
+
     img {
       padding: 2rem 0;
       width: 100%;
     }
+
+    img#sml {
+      width: 90%;
+    }
   }
+
   p.heading {
     font-size: $fs-heading;
     text-transform: uppercase;
     line-height: 1;
+
     span {
       font-weight: $fw-black;
       color: callColor("red");
     }
   }
+
   p.para {
     margin: 1rem 0;
     font-size: 0.875rem;
@@ -105,6 +113,31 @@ main {
 
     img {
       width: 100%;
+    }
+  }
+  .offers {
+    margin: 2rem 0;
+    .offer-item {
+      @include flex-reg;
+      margin: 1rem 0;
+
+      .icon {
+        width: 10rem;
+        padding-right: 1rem;
+        img {
+          width: 100%;
+        }
+      }
+      .offer-heading {
+        font-weight: $fw-black;
+        font-size: $fs-sml-heading;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      p.para {
+        margin: 0.3rem 0;
+      }
     }
   }
 }

@@ -29,7 +29,8 @@ $colors: (
 //Font-Size
 
 $fs-reg: 1rem;
-$fs-heading: 2.8rem;
+$fs-heading: 2.3rem;
+$fs-sml-heading: 1.2rem;
 
 //Font-Weights
 
@@ -42,4 +43,8 @@ $fw-black: 900;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@mixin flex-reg {
+  display: flex;
 }
