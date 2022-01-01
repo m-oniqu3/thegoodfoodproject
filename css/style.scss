@@ -104,15 +104,15 @@ main {
 
   p.para {
     margin: 1rem 0;
-    font-size: 0.875rem;
+    font-size: 0.9rem;
     text-transform: capitalize;
   }
 
   .white-plate {
     position: relative;
-    width: 35rem;
-    right: 120px;
-    margin: 2rem auto;
+    width: 40rem;
+    right: 140px;
+    margin-top: 2rem;
 
     img {
       width: 100%;
@@ -138,7 +138,6 @@ main {
         font-size: $fs-sml-heading;
         text-transform: uppercase;
         letter-spacing: 1px;
-        margin-top: 1rem;
       }
 
       p.para {
@@ -148,11 +147,12 @@ main {
   }
 
   .download {
+    padding: 1rem 0;
     .picture {
       position: relative;
       width: 35rem;
-      right: 135px;
-      margin-top: rem;
+      right: 140px;
+      margin-top: 1rem;
     }
 
     button {
@@ -164,6 +164,51 @@ main {
         img {
           width: 100%;
         }
+      }
+    }
+  }
+
+  .menu {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.6),
+        rgba(255, 255, 255, 0.6)
+      ),
+      url(../images/dark-grey-background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-y;
+    height: auto;
+
+    .menu-heading {
+      text-align: center;
+    }
+
+    .courses {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      text-align: center;
+
+      p.course-title {
+        font-weight: $fw-semi-bold;
+        text-transform: uppercase;
+        padding: 0.5rem 0.7rem;
+        &:hover,
+        &:focus {
+          background-color: callColor("green");
+          color: callColor("white");
+          border-radius: 10px;
+          padding: 0.5rem 0.7rem;
+        }
+      }
+    }
+
+    .menu-items {
+      @include flex-reg;
+
+      .dish-name {
+      }
+
+      .dish-info {
       }
     }
   }
