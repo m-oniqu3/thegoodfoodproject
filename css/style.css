@@ -37,7 +37,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 85vh;
+  height: 100vh;
 }
 
 header nav {
@@ -60,7 +60,7 @@ header nav .logo {
 }
 
 header .intro {
-  margin-top: 3rem;
+  margin-top: 3.5rem;
 }
 
 header .intro p.intro-heading {
@@ -76,12 +76,58 @@ header .intro p.intro-heading .heading-bold {
   font-weight: 900;
 }
 
-header .intro p.para {
+header .intro p.intro-para {
   color: white;
   text-transform: capitalize;
   padding: 1rem 0;
   line-height: 1.5;
   font-weight: 500;
   width: 85%;
+}
+
+main {
+  background-image: url("https://images.unsplash.com/photo-1579492450119-80542d516179?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat-y;
+  height: auto;
+  overflow: hidden;
+}
+
+main .picture {
+  width: 100%;
+}
+
+main .picture img {
+  padding: 2rem 0;
+  width: 100%;
+}
+
+main p.heading {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+main p.heading span {
+  font-weight: 900;
+  color: #ff0000;
+}
+
+main p.para {
+  margin: 1rem 0;
+  font-size: 0.875rem;
+  text-transform: capitalize;
+}
+
+main .white-plate {
+  position: relative;
+  width: 35rem;
+  right: 120px;
+  margin: 2rem auto;
+}
+
+main .white-plate img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

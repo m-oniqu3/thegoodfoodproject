@@ -27,7 +27,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 85vh;
+  height: 100vh;
 
   nav {
     padding: 1.5rem 0;
@@ -41,7 +41,7 @@ header {
   }
 
   .intro {
-    margin-top: 3rem;
+    margin-top: 3.5rem;
 
     p.intro-heading {
       color: callColor("white");
@@ -56,13 +56,55 @@ header {
       }
     }
 
-    p.para {
+    p.intro-para {
       color: callColor("white");
       text-transform: capitalize;
       padding: 1rem 0;
       line-height: 1.5;
       font-weight: $fw-medium;
       width: 85%;
+    }
+  }
+}
+
+main {
+  background-image: url("https://images.unsplash.com/photo-1579492450119-80542d516179?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat-y;
+  height: auto;
+  overflow: hidden;
+
+  .picture {
+    width: 100%;
+    img {
+      padding: 2rem 0;
+      width: 100%;
+    }
+  }
+  p.heading {
+    font-size: $fs-heading;
+    text-transform: uppercase;
+    line-height: 1;
+    span {
+      font-weight: $fw-black;
+      color: callColor("red");
+    }
+  }
+  p.para {
+    margin: 1rem 0;
+    font-size: 0.875rem;
+    text-transform: capitalize;
+  }
+
+  .white-plate {
+    position: relative;
+    width: 35rem;
+    right: 120px;
+    margin: 2rem auto;
+
+    img {
+      width: 100%;
     }
   }
 }
