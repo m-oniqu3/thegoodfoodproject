@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+button {
+  margin: 1rem 0;
+}
+
+.btn {
+  color: white;
+  background-color: #84b121;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+header {
+  background-image: url("/images/strawberry.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 85vh;
+}
+
+header nav {
+  padding: 1.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .logo {
+  font-family: "Paytone One", sans-serif;
+  color: white;
+  font-size: 1.5rem;
+}
+
+header .intro {
+  margin-top: 3rem;
+}
+
+header .intro p.intro-heading {
+  color: white;
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+header .intro p.intro-heading .heading-bold {
+  color: #ff0000;
+  font-size: 5rem;
+  font-weight: 900;
+}
+
+header .intro p.para {
+  color: white;
+  text-transform: capitalize;
+  padding: 1rem 0;
+  line-height: 1.5;
+  font-weight: 500;
+  width: 85%;
+}
+/*# sourceMappingURL=style.css.map */

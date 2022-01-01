@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+$colors: (
+  "red": #ff0000,
+  "green": #84b121,
+  "lightGreen": rgba(211, 239, 193, 0.7),
+  "darkGreen": #425d06,
+  "white": white,
+  "black": black,
+);
+
+@function callColor($color) {
+  @return map-get($colors, $color);
+}
+
+//Font-Size
+
+$fs-reg: 1rem;
+
+//Font-Weights
+
+$fw-medium: 500;
+$fw-semi-bold: 600;
+$fw-black: 900;
+
+//Mixins
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

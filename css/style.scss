@@ -1,0 +1,68 @@
+@import "variables";
+
+// Global Styles
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+button {
+  margin: 1rem 0;
+}
+
+.btn {
+  color: callColor("white");
+  background-color: callColor("green");
+  border: none;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+  font-size: $fs-reg;
+  font-weight: $fw-semi-bold;
+}
+
+// Main Styles
+header {
+  background-image: url("/images/strawberry.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 85vh;
+
+  nav {
+    padding: 1.5rem 0;
+    @include flex-between;
+
+    .logo {
+      font-family: "Paytone One", sans-serif;
+      color: callColor("white");
+      font-size: 1.5rem;
+    }
+  }
+
+  .intro {
+    margin-top: 3rem;
+
+    p.intro-heading {
+      color: callColor("white");
+      text-transform: uppercase;
+      font-size: 3rem;
+      line-height: 1;
+
+      .heading-bold {
+        color: callColor("red");
+        font-size: 5rem;
+        font-weight: $fw-black;
+      }
+    }
+
+    p.para {
+      color: callColor("white");
+      text-transform: capitalize;
+      padding: 1rem 0;
+      line-height: 1.5;
+      font-weight: $fw-medium;
+      width: 85%;
+    }
+  }
+}
