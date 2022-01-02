@@ -16,7 +16,7 @@ button {
   border: none;
   border-radius: 10px;
   padding: 0.8rem 1.5rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: $fs-reg;
   font-weight: $fw-semi-bold;
 }
@@ -264,12 +264,13 @@ main {
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
+      overflow: hidden;
       height: auto;
 
       .picture {
         position: relative;
         width: 30rem;
-        top: 50px;
+        top: 30px;
         left: -150px;
         margin-top: 1rem;
         z-index: 1;
@@ -289,6 +290,32 @@ main {
           color: callColor("darkGreen");
           font-size: $fs-sml-heading;
         }
+      }
+    }
+  }
+
+  .contact {
+    padding: 3rem 0;
+    background-image: url(../images/grey-background.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat;
+    height: auto;
+
+    form {
+      label {
+        display: block;
+        padding: 0.5rem 0;
+        font-weight: $fw-semi-bold;
+      }
+      input,
+      textarea {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.4);
+        padding: 0.5rem;
+        border: 2px solid grey;
+        border-radius: 5px;
+        font-family: "Poppins", sans-serif;
       }
     }
   }

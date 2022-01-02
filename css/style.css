@@ -27,7 +27,7 @@ button {
   border: none;
   border-radius: 10px;
   padding: 0.8rem 1.5rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 1rem;
   font-weight: 600;
 }
@@ -305,13 +305,14 @@ main .menu .specials {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: hidden;
   height: auto;
 }
 
 main .menu .specials .picture {
   position: relative;
   width: 30rem;
-  top: 50px;
+  top: 30px;
   left: -150px;
   margin-top: 1rem;
   z-index: 1;
@@ -331,5 +332,30 @@ main .menu .specials .content p.sub-heading {
   font-weight: 600;
   color: #425d06;
   font-size: 1.2rem;
+}
+
+main .contact {
+  padding: 3rem 0;
+  background-image: url(../images/grey-background.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat;
+  height: auto;
+}
+
+main .contact form label {
+  display: block;
+  padding: 0.5rem 0;
+  font-weight: 600;
+}
+
+main .contact form input,
+main .contact form textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 0.5rem;
+  border: 2px solid grey;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
