@@ -189,7 +189,7 @@ main {
       text-align: center;
 
       p.course-title {
-        font-weight: $fw-semi-bold;
+        //font-weight: $fw-semi-bold;
         text-transform: uppercase;
         padding: 0.5rem 0.7rem;
         &:hover,
@@ -202,13 +202,25 @@ main {
       }
     }
 
-    .menu-items {
-      @include flex-reg;
+    .meal {
+      .menu-items {
+        @include flex-reg;
+        padding: 1rem 0;
 
-      .dish-name {
-      }
+        .dish-name {
+          text-transform: uppercase;
+          font-weight: $fw-semi-bold;
+        }
 
-      .dish-info {
+        .dish-info {
+          text-transform: capitalize;
+          font-size: 0.8rem;
+        }
+
+        .price {
+          font-weight: $fw-semi-bold;
+          padding-left: 1rem;
+        }
       }
     }
   }

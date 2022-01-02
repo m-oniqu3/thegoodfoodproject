@@ -223,7 +223,6 @@ main .menu .courses {
 }
 
 main .menu .courses p.course-title {
-  font-weight: 600;
   text-transform: uppercase;
   padding: 0.5rem 0.7rem;
 }
@@ -235,9 +234,25 @@ main .menu .courses p.course-title:hover, main .menu .courses p.course-title:foc
   padding: 0.5rem 0.7rem;
 }
 
-main .menu .menu-items {
+main .menu .meal .menu-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 1rem 0;
+}
+
+main .menu .meal .menu-items .dish-name {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+main .menu .meal .menu-items .dish-info {
+  text-transform: capitalize;
+  font-size: 0.8rem;
+}
+
+main .menu .meal .menu-items .price {
+  font-weight: 600;
+  padding-left: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
