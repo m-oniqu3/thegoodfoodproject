@@ -4,6 +4,10 @@
 .container {
   width: 85%;
   margin: 0 auto;
+
+  @include tablet {
+    width: 90%;
+  }
 }
 
 .logo {
@@ -12,6 +16,22 @@
   font-size: 1.5rem;
 }
 
+p.heading {
+  font-size: $fs-heading;
+  text-transform: uppercase;
+  line-height: 1;
+
+  span {
+    font-weight: $fw-black;
+    color: callColor("red");
+  }
+}
+
+p.para {
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
 button {
   margin: 1rem 0;
 }
@@ -101,6 +121,7 @@ main {
       @include tablet {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        align-items: center;
       }
 
       .content {
@@ -117,23 +138,6 @@ main {
       img {
         width: 100%;
       }
-    }
-
-    p.heading {
-      font-size: $fs-heading;
-      text-transform: uppercase;
-      line-height: 1;
-
-      span {
-        font-weight: $fw-black;
-        color: callColor("red");
-      }
-    }
-
-    p.para {
-      margin: 1rem 0;
-      font-size: 0.9rem;
-      text-transform: capitalize;
     }
 
     .about-second {
@@ -153,7 +157,7 @@ main {
         @include tablet {
           order: 1;
           right: -10px;
-          transform: rotate(90deg);
+          //transform: rotate(90deg);
         }
         img {
           width: 100%;
@@ -172,11 +176,17 @@ main {
           // }
         }
       }
+    }
 
-      .section-head {
-        display: grid;
-        @include tablet {
-          grid-template-columns: repeat(2, 1fr);
+    .section-head {
+      display: grid;
+      @include tablet {
+        grid-template-columns: 300px auto;
+        align-items: center;
+        column-gap: 1.5rem;
+
+        &:last-child {
+          margin-left: auto;
         }
       }
     }
@@ -217,9 +227,25 @@ main {
   .download {
     padding: 1rem 0;
 
+    @include tablet {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      gap: 1rem;
+    }
+
     .picture {
-      transform: scale(1.21);
       padding: 2rem 0;
+
+      img {
+        width: 100%;
+        transform: scale(1.25);
+
+        @include tablet {
+          position: relative;
+          left: -30px;
+        }
+      }
     }
 
     .download-btns {
