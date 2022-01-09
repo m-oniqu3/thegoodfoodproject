@@ -603,6 +603,19 @@ footer {
   padding: 2rem 0 1rem;
 }
 
+@media (min-width: 600px) {
+  footer .footer-main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 footer p.sub-heading {
   color: white;
   padding-bottom: 0.5rem;
@@ -611,6 +624,13 @@ footer p.sub-heading {
 footer .f-links,
 footer .f-download {
   padding: 1rem 0;
+}
+
+@media (min-width: 600px) {
+  footer .f-links,
+  footer .f-download {
+    padding: 0;
+  }
 }
 
 footer ul {

@@ -64,7 +64,7 @@ $fw-black: 900;
 //Media Queries
 
 $tablet: 600px;
-$desktop: 1024px;
+$laptop: 1024px;
 
 @mixin small {
   @media (max-width: #{$tablet}) {
@@ -74,6 +74,12 @@ $desktop: 1024px;
 
 @mixin tablet {
   @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$laptop}) {
     @content;
   }
 }
