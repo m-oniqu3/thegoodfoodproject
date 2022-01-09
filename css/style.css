@@ -369,6 +369,8 @@ main .menu .meal .menu-items .price {
 }
 
 main .menu .faves {
+  max-width: 480px;
+  margin: 0 auto;
   padding-bottom: 1rem;
 }
 
@@ -428,6 +430,9 @@ main .menu .faves-lg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 860px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
 }
 
 @media (max-width: 600px) {
@@ -437,7 +442,11 @@ main .menu .faves-lg {
 }
 
 main .menu .faves-lg .faves-lg-group {
-  width: 30%;
+  width: 28%;
+}
+
+main .menu .faves-lg .faves-lg-group:nth-child(2) {
+  width: 35%;
 }
 
 main .menu .faves-lg .faves-lg-group img {
@@ -482,12 +491,12 @@ main .menu .specials {
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
-  height: 60vh;
+  height: auto;
 }
 
 @media (min-width: 600px) {
   main .menu .specials {
-    height: 70vh;
+    height: auto;
   }
 }
 
@@ -541,6 +550,30 @@ main .contact {
   background-size: contain;
   background-repeat: repeat;
   height: auto;
+}
+
+@media (min-width: 600px) {
+  main .contact .contact-main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+main .contact .picture {
+  width: 100%;
+}
+
+main .contact .picture img {
+  width: 100%;
 }
 
 main .contact form label {
