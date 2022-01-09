@@ -187,8 +187,8 @@ main .about-second .white-plate {
         -ms-flex-order: 1;
             order: 1;
     right: 30px;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
 }
 
