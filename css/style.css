@@ -336,6 +336,7 @@ main .menu .courses p.course-title:hover, main .menu .courses p.course-title:foc
   color: white;
   border-radius: 10px;
   padding: 0.5rem 0.7rem;
+  font-weight: 600;
 }
 
 main .menu .meal {
@@ -369,6 +370,12 @@ main .menu .meal .menu-items .price {
 
 main .menu .faves {
   padding-bottom: 1rem;
+}
+
+@media (min-width: 600px) {
+  main .menu .faves {
+    display: none;
+  }
 }
 
 main .menu .faves .fave-item {
@@ -408,6 +415,65 @@ main .menu .faves .fave-item button {
 main .menu .faves .fave-item .btn {
   padding: 0.5rem 0.8rem;
   font-size: 0.875rem;
+  border-radius: 5px;
+}
+
+main .menu .faves-lg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 600px) {
+  main .menu .faves-lg {
+    display: none;
+  }
+}
+
+main .menu .faves-lg .faves-lg-group {
+  width: 30%;
+}
+
+main .menu .faves-lg .faves-lg-group img {
+  width: 100%;
+}
+
+main .menu .faves-lg .faves-lg-group .fave-item-lg {
+  background-color: rgba(211, 239, 193, 0.7);
+  -webkit-box-shadow: 0px 3.43726px 4.29658px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 3.43726px 4.29658px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+main .menu .faves-lg .faves-lg-group .fave-item-lg .merge {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 0.2rem;
+}
+
+main .menu .faves-lg .faves-lg-group .fave-item-lg .merge .price {
+  color: #425d06;
+  font-weight: 600;
+}
+
+main .menu .faves-lg .faves-lg-group .fave-item-lg .merge .btn {
+  margin: 0;
+  padding: 0.5rem 0.8rem;
+  border-radius: 5px;
 }
 
 main .menu .specials {
@@ -464,7 +530,6 @@ main .menu .specials .content p.heading {
 
 @media (min-width: 600px) {
   main .menu .specials .content p.heading {
-    width: 70%;
     padding-bottom: 1rem;
   }
 }
