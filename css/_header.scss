@@ -1,0 +1,51 @@
+header {
+  background-image: url("https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+  nav {
+    padding: 1.5rem 0;
+    @include flex-between;
+  }
+
+  .intro {
+    margin-top: 3.5rem;
+
+    @include tablet {
+      width: 70%;
+      margin-top: 7.5rem;
+    }
+
+    p.intro-heading {
+      color: callColor("white");
+      text-transform: uppercase;
+      font-size: 3rem;
+      line-height: 1;
+
+      @include tablet {
+        font-size: 4rem;
+      }
+
+      .heading-bold {
+        color: callColor("red");
+        font-size: 5rem;
+        font-weight: $fw-black;
+
+        @include tablet {
+          font-size: 7rem;
+        }
+      }
+    }
+
+    p.intro-para {
+      color: callColor("white");
+      text-transform: capitalize;
+      padding: 1rem 0;
+      line-height: 1.5;
+      font-weight: $fw-medium;
+      width: 85%;
+    }
+  }
+}

@@ -1,0 +1,134 @@
+main {
+  .about {
+    padding: 2rem 0;
+    background-image: url(../images/grey-background.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat;
+    height: auto;
+
+    .about-first {
+      padding: 1rem 0;
+
+      @include tablet {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        column-gap: 1rem;
+        padding: 2rem 0;
+      }
+
+      .picture {
+        img {
+          @include tablet {
+            transform: scale(1.2);
+          }
+        }
+      }
+
+      .content {
+        @include tablet {
+          width: 85%;
+          margin-left: auto;
+        }
+      }
+    }
+
+    .picture {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .about-second {
+      @include tablet {
+        display: grid;
+        grid-template-columns: 420px auto;
+        align-items: center;
+        padding: 1.5rem 0;
+      }
+
+      .white-plate {
+        margin: 3rem auto;
+        padding-left: 1rem;
+        padding: 2rem 0;
+        transform: scale(1.35);
+
+        @include tablet {
+          width: 50rem;
+          order: 1;
+          padding-left: 2rem;
+          transform: scale(1);
+          margin: 0 auto;
+          //right: 50px;
+          //transform: rotate(90deg);
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .about-second-nested {
+        .picture {
+          width: 100%;
+          @include tablet {
+            margin-top: 5rem;
+          }
+
+          // img#sml {
+          //   width: 90%;
+          // }
+        }
+      }
+    }
+
+    .section-head {
+      display: grid;
+      @include tablet {
+        grid-template-columns: 300px auto;
+        align-items: center;
+        column-gap: 1.5rem;
+
+        &:last-child {
+          margin-left: auto;
+        }
+      }
+    }
+
+    .offers {
+      margin-top: 2rem;
+
+      @include tablet {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+      }
+      .offer-item {
+        @include flex-reg;
+        padding: 1rem 0;
+
+        .icon {
+          width: 10rem;
+          padding-right: 1rem;
+          img {
+            width: 100%;
+          }
+        }
+
+        .offer-heading {
+          font-weight: $fw-black;
+          font-size: $fs-sml-heading;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        }
+
+        p.para {
+          margin: 0.3rem 0;
+        }
+      }
+    }
+  }
+}

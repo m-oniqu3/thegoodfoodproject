@@ -12,61 +12,6 @@ body {
   font-size: 1rem;
 }
 
-.container {
-  width: 85%;
-  margin: 0 auto;
-}
-
-@media (min-width: 700px) {
-  .container {
-    width: 90%;
-  }
-}
-
-.logo {
-  font-family: "Paytone One", sans-serif;
-  color: white;
-  font-size: 1.5rem;
-}
-
-p.heading {
-  font-size: 2.7rem;
-  text-transform: uppercase;
-  line-height: 1;
-}
-
-p.heading span {
-  font-weight: 900;
-  color: #ff0000;
-}
-
-p.para {
-  margin: 1rem 0;
-  font-size: 0.9rem;
-  text-transform: capitalize;
-}
-
-button {
-  margin: 1rem 0;
-}
-
-.btn {
-  color: white;
-  background-color: #84b121;
-  border: none;
-  border-radius: 10px;
-  padding: 0.8rem 1.5rem;
-  text-transform: capitalize;
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-p.sub-heading {
-  font-weight: 600;
-  color: #425d06;
-  font-size: 1.2rem;
-}
-
 header {
   background-image: url("https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
   background-position: center;
@@ -131,10 +76,6 @@ header .intro p.intro-para {
   line-height: 1.5;
   font-weight: 500;
   width: 85%;
-}
-
-main {
-  overflow: hidden;
 }
 
 main .about {
@@ -514,6 +455,65 @@ main .menu .specials .content p.heading {
   width: 90%;
 }
 
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+@media (min-width: 700px) {
+  .container {
+    width: 90%;
+  }
+}
+
+.logo {
+  font-family: "Paytone One", sans-serif;
+  color: white;
+  font-size: 1.5rem;
+}
+
+p.heading {
+  font-size: 2.7rem;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+p.heading span {
+  font-weight: 900;
+  color: #ff0000;
+}
+
+p.para {
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+
+button {
+  margin: 1rem 0;
+}
+
+.btn {
+  color: white;
+  background-color: #84b121;
+  border: none;
+  border-radius: 10px;
+  padding: 0.8rem 1.5rem;
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+p.sub-heading {
+  font-weight: 600;
+  color: #425d06;
+  font-size: 1.2rem;
+}
+
+main {
+  overflow: hidden;
+}
+
 main .contact {
   padding: 3rem 0;
   background-image: url(../images/grey-background.png);
@@ -537,47 +537,5 @@ main .contact form textarea {
   border: 2px solid grey;
   border-radius: 5px;
   font-family: "Poppins", sans-serif;
-}
-
-main footer {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(31, 45, 1, 0.9)), to(rgba(31, 45, 1, 0.9))), url(../images/footer-img.png);
-  background-image: linear-gradient(rgba(31, 45, 1, 0.9), rgba(31, 45, 1, 0.9)), url(../images/footer-img.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: auto;
-  color: white;
-  padding: 2rem 0 1rem;
-}
-
-main footer p.sub-heading {
-  color: white;
-  padding-bottom: 0.5rem;
-}
-
-main footer .f-links,
-main footer .f-download {
-  padding: 1rem 0;
-}
-
-main footer ul {
-  list-style: none;
-}
-
-main footer ul li {
-  padding: 0.1rem 0;
-}
-
-main footer ul li a {
-  color: inherit;
-  text-decoration: none;
-}
-
-main footer .f-download #f-icon {
-  width: 2rem;
-}
-
-main footer .f-download p.para {
-  font-weight: 500;
 }
 /*# sourceMappingURL=style.css.map */

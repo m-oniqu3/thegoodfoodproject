@@ -1,0 +1,40 @@
+main {
+  .download {
+    padding: 1rem 0;
+
+    @include tablet {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .picture {
+      padding: 2rem 0;
+
+      img {
+        width: 100%;
+        transform: scale(1.25);
+
+        @include tablet {
+          position: relative;
+          left: -30px;
+        }
+      }
+    }
+
+    .download-btns {
+      button {
+        @include flex-between;
+
+        .icon {
+          width: 2rem;
+          padding-left: 0.5rem;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
