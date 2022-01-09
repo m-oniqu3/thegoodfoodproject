@@ -37,7 +37,7 @@ header .intro {
   margin-top: 3.5rem;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
   header .intro {
     width: 70%;
     margin-top: 7.5rem;
@@ -51,7 +51,7 @@ header .intro p.intro-heading {
   line-height: 1;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
   header .intro p.intro-heading {
     font-size: 4rem;
   }
@@ -63,7 +63,7 @@ header .intro p.intro-heading .heading-bold {
   font-weight: 900;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
   header .intro p.intro-heading .heading-bold {
     font-size: 7rem;
   }
@@ -91,7 +91,7 @@ main .about .about-first {
   padding: 1rem 0;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
   main .about .about-first {
     display: -ms-grid;
     display: grid;
@@ -106,14 +106,14 @@ main .about .about-first {
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
   main .about .about-first .picture img {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
   main .about .about-first .content {
     width: 85%;
     margin-left: auto;
@@ -128,7 +128,7 @@ main .about .picture img {
   width: 100%;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
   main .about .about-second {
     display: -ms-grid;
     display: grid;
@@ -149,7 +149,7 @@ main .about .about-second .white-plate {
           transform: scale(1.35);
 }
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
   main .about .about-second .white-plate {
     width: 50rem;
     -webkit-box-ordinal-group: 2;
@@ -170,7 +170,7 @@ main .about .about-second .about-second-nested .picture {
   width: 100%;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
   main .about .about-second .about-second-nested .picture {
     margin-top: 5rem;
   }
@@ -181,7 +181,7 @@ main .about .section-head {
   display: grid;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
   main .about .section-head {
     -ms-grid-columns: 300px auto;
         grid-template-columns: 300px auto;
@@ -200,7 +200,7 @@ main .about .offers {
   margin-top: 2rem;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
   main .about .offers {
     display: -ms-grid;
     display: grid;
@@ -241,7 +241,7 @@ main .download {
   padding: 1rem 0;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
   main .download {
     display: -ms-grid;
     display: grid;
@@ -264,7 +264,7 @@ main .download .picture img {
           transform: scale(1.25);
 }
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
   main .download .picture img {
     position: relative;
     left: -30px;
@@ -305,7 +305,7 @@ main .menu .picture img {
   width: 100%;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
   main .menu .picture img {
     height: 35vh;
     -o-object-fit: cover;
@@ -347,7 +347,7 @@ main .menu .meal .menu-items {
   display: -ms-flexbox;
   display: flex;
   padding: 1rem 0;
-  max-width: 60%;
+  max-width: 450px;
   margin: 0 auto;
 }
 
@@ -359,12 +359,7 @@ main .menu .meal .menu-items .dish-name {
 main .menu .meal .menu-items .dish-info {
   text-transform: capitalize;
   font-size: 0.8rem;
-}
-
-@media (min-width: 700px) {
-  main .menu .meal .menu-items .dish-info {
-    width: 70%;
-  }
+  max-width: 300px;
 }
 
 main .menu .meal .menu-items .price {
@@ -421,31 +416,32 @@ main .menu .specials {
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
-  height: 50vh;
+  height: 60vh;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
   main .menu .specials {
-    height: 60vh;
+    height: 70vh;
   }
 }
 
 main .menu .specials .picture-blob {
   position: relative;
+  width: 30rem;
   top: 30px;
   left: -150px;
   margin-top: 1rem;
   z-index: 1;
 }
 
-main .menu .specials .picture-blob img {
-  width: 100%;
+@media (min-width: 600px) {
+  main .menu .specials .picture-blob {
+    width: 35rem;
+  }
 }
 
-@media (min-width: 700px) {
-  main .menu .specials .picture-blob img {
-    width: 80%;
-  }
+main .menu .specials .picture-blob img {
+  width: 100%;
 }
 
 main .menu .specials .content {
@@ -455,10 +451,10 @@ main .menu .specials .content {
   width: 60%;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
   main .menu .specials .content {
-    width: 50%;
-    top: 100px;
+    width: 60%;
+    top: 70px;
   }
 }
 
@@ -466,7 +462,7 @@ main .menu .specials .content p.heading {
   width: 90%;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
   main .menu .specials .content p.heading {
     width: 70%;
     padding-bottom: 1rem;
@@ -545,7 +541,7 @@ footer .f-download p.para {
   margin: 0 auto;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
   .container {
     width: 90%;
   }
@@ -563,7 +559,7 @@ p.heading {
   line-height: 1;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
   p.heading {
     font-size: 3rem;
   }
