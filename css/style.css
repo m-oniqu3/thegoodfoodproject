@@ -124,7 +124,7 @@ main .about {
 }
 
 @media (min-width: 768px) {
-  main .about-first {
+  main .about .about-first {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
@@ -133,48 +133,50 @@ main .about {
 }
 
 @media (min-width: 768px) {
-  main .about-first .content {
+  main .about .about-first .content {
     width: 90%;
     margin-left: auto;
   }
 }
 
-main .picture {
+main .about .picture {
   width: 100%;
 }
 
-main .picture img {
+main .about .picture img {
   width: 100%;
 }
 
-main p.heading {
+main .about p.heading {
   font-size: 2.7rem;
   text-transform: uppercase;
   line-height: 1;
 }
 
-main p.heading span {
+main .about p.heading span {
   font-weight: 900;
   color: #ff0000;
 }
 
-main p.para {
+main .about p.para {
   margin: 1rem 0;
   font-size: 0.9rem;
   text-transform: capitalize;
 }
 
-main .about-second {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 420px auto;
-      grid-template-columns: 420px auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media (min-width: 768px) {
+  main .about .about-second {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 420px auto;
+        grid-template-columns: 420px auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
-main .about-second .white-plate {
+main .about .about-second .white-plate {
   position: relative;
   width: 40rem;
   right: 140px;
@@ -182,7 +184,7 @@ main .about-second .white-plate {
 }
 
 @media (min-width: 768px) {
-  main .about-second .white-plate {
+  main .about .about-second .white-plate {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -192,46 +194,46 @@ main .about-second .white-plate {
   }
 }
 
-main .about-second .white-plate img {
+main .about .about-second .white-plate img {
   width: 100%;
 }
 
-main .about-second .about-second-nested .picture {
+main .about .about-second .about-second-nested .picture {
   width: 100%;
 }
 
-main .about-second .about-second-nested .picture img#sml {
+main .about .about-second .about-second-nested .picture img#sml {
   width: 90%;
 }
 
-main .offers {
+main .about .offers {
   margin-top: 2rem;
 }
 
-main .offers .offer-item {
+main .about .offers .offer-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 1rem 0;
 }
 
-main .offers .offer-item .icon {
+main .about .offers .offer-item .icon {
   width: 10rem;
   padding-right: 1rem;
 }
 
-main .offers .offer-item .icon img {
+main .about .offers .offer-item .icon img {
   width: 100%;
 }
 
-main .offers .offer-item .offer-heading {
+main .about .offers .offer-item .offer-heading {
   font-weight: 900;
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-main .offers .offer-item p.para {
+main .about .offers .offer-item p.para {
   margin: 0.3rem 0;
 }
 

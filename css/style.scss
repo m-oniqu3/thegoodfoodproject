@@ -96,106 +96,107 @@ main {
     background-size: contain;
     background-repeat: repeat;
     height: auto;
-  }
 
-  .about-first {
-    @include tablet {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    .content {
+    .about-first {
       @include tablet {
-        width: 90%;
-        margin-left: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .content {
+        @include tablet {
+          width: 90%;
+          margin-left: auto;
+        }
       }
     }
-  }
 
-  .picture {
-    width: 100%;
-
-    img {
+    .picture {
       width: 100%;
-    }
-  }
 
-  p.heading {
-    font-size: $fs-heading;
-    text-transform: uppercase;
-    line-height: 1;
-
-    span {
-      font-weight: $fw-black;
-      color: callColor("red");
-    }
-  }
-
-  p.para {
-    margin: 1rem 0;
-    font-size: 0.9rem;
-    text-transform: capitalize;
-  }
-
-  .about-second {
-    display: grid;
-    grid-template-columns: 420px auto;
-    align-items: center;
-
-    .white-plate {
-      position: relative;
-      width: 40rem;
-      right: 140px;
-      margin-top: 2rem;
-
-      @include tablet {
-        order: 1;
-        right: 30px;
-        transform: rotate(180deg);
-      }
       img {
         width: 100%;
       }
     }
 
-    .about-second-nested {
-      .picture {
-        width: 100%;
+    p.heading {
+      font-size: $fs-heading;
+      text-transform: uppercase;
+      line-height: 1;
 
-        img#sml {
-          width: 90%;
-        }
+      span {
+        font-weight: $fw-black;
+        color: callColor("red");
       }
     }
-  }
 
-  .offers {
-    margin-top: 2rem;
-    .offer-item {
-      @include flex-reg;
-      padding: 1rem 0;
+    p.para {
+      margin: 1rem 0;
+      font-size: 0.9rem;
+      text-transform: capitalize;
+    }
 
-      .icon {
-        width: 10rem;
-        padding-right: 1rem;
+    .about-second {
+      @include tablet {
+        display: grid;
+        grid-template-columns: 420px auto;
+        align-items: center;
+      }
+
+      .white-plate {
+        position: relative;
+        width: 40rem;
+        right: 140px;
+        margin-top: 2rem;
+
+        @include tablet {
+          order: 1;
+          right: 30px;
+          transform: rotate(180deg);
+        }
         img {
           width: 100%;
         }
       }
 
-      .offer-heading {
-        font-weight: $fw-black;
-        font-size: $fs-sml-heading;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-      }
+      .about-second-nested {
+        .picture {
+          width: 100%;
 
-      p.para {
-        margin: 0.3rem 0;
+          img#sml {
+            width: 90%;
+          }
+        }
+      }
+    }
+
+    .offers {
+      margin-top: 2rem;
+      .offer-item {
+        @include flex-reg;
+        padding: 1rem 0;
+
+        .icon {
+          width: 10rem;
+          padding-right: 1rem;
+          img {
+            width: 100%;
+          }
+        }
+
+        .offer-heading {
+          font-weight: $fw-black;
+          font-size: $fs-sml-heading;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        }
+
+        p.para {
+          margin: 0.3rem 0;
+        }
       }
     }
   }
-
   .download {
     padding: 1rem 0;
 
