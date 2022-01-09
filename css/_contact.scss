@@ -1,0 +1,28 @@
+main {
+  .contact {
+    padding: 3rem 0;
+    background-image: url(../images/grey-background.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat;
+    height: auto;
+
+    form {
+      label {
+        display: block;
+        padding: 0.5rem 0;
+        font-weight: $fw-semi-bold;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.4);
+        padding: 0.5rem;
+        border: 2px solid grey;
+        border-radius: 5px;
+        font-family: "Poppins", sans-serif;
+      }
+    }
+  }
+}

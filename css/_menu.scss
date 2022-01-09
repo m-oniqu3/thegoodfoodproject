@@ -15,7 +15,7 @@ main {
         width: 100%;
 
         @include tablet {
-          height: 30vh;
+          height: 35vh;
           object-fit: cover;
         }
       }
@@ -112,33 +112,47 @@ main {
       background-size: cover;
       background-repeat: no-repeat;
       overflow: hidden;
-      height: auto;
+      height: 50vh;
 
       @include tablet {
         height: 60vh;
       }
 
-      .picture {
-        //position: relative;
-        width: 30rem;
+      .picture-blob {
+        position: relative;
+        //width: 30rem;
         top: 30px;
         left: -150px;
         margin-top: 1rem;
         z-index: 1;
 
-        @include tablet {
-          height: 30vh;
-          left: 0px;
+        img {
+          width: 100%;
+
+          @include tablet {
+            width: 80%;
+          }
         }
       }
 
       .content {
         position: absolute;
-        top: 80px;
+        top: 45px;
         left: 160px;
+        width: 60%;
+
+        @include tablet {
+          width: 50%;
+          top: 100px;
+        }
 
         p.heading {
           width: 90%;
+
+          @include tablet {
+            width: 70%;
+            padding-bottom: 1rem;
+          }
         }
       }
     }
