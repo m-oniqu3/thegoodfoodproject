@@ -59,3 +59,13 @@ $fw-black: 900;
 @mixin flex-reg {
   display: flex;
 }
+
+//Media Queries
+$tablet: 768px;
+$desktop: 1024px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}

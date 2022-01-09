@@ -49,16 +49,29 @@ header {
   .intro {
     margin-top: 3.5rem;
 
+    @include tablet {
+      width: 70%;
+      margin-top: 7.5rem;
+    }
+
     p.intro-heading {
       color: callColor("white");
       text-transform: uppercase;
       font-size: 3rem;
       line-height: 1;
 
+      @include tablet {
+        font-size: 4rem;
+      }
+
       .heading-bold {
         color: callColor("red");
         font-size: 5rem;
         font-weight: $fw-black;
+
+        @include tablet {
+          font-size: 7rem;
+        }
       }
     }
 
@@ -85,15 +98,25 @@ main {
     height: auto;
   }
 
+  .about-first {
+    @include tablet {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .content {
+      @include tablet {
+        width: 90%;
+        margin-left: auto;
+      }
+    }
+  }
+
   .picture {
     width: 100%;
 
     img {
       width: 100%;
-    }
-
-    img#sml {
-      width: 90%;
     }
   }
 
@@ -114,14 +137,35 @@ main {
     text-transform: capitalize;
   }
 
-  .white-plate {
-    position: relative;
-    width: 40rem;
-    right: 140px;
-    margin-top: 2rem;
+  .about-second {
+    display: grid;
+    grid-template-columns: 420px auto;
+    align-items: center;
 
-    img {
-      width: 100%;
+    .white-plate {
+      position: relative;
+      width: 40rem;
+      right: 140px;
+      margin-top: 2rem;
+
+      @include tablet {
+        order: 1;
+        right: 30px;
+        transform: rotate(90deg);
+      }
+      img {
+        width: 100%;
+      }
+    }
+
+    .about-second-nested {
+      .picture {
+        width: 100%;
+
+        img#sml {
+          width: 90%;
+        }
+      }
     }
   }
 

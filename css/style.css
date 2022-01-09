@@ -69,6 +69,13 @@ header .intro {
   margin-top: 3.5rem;
 }
 
+@media (min-width: 768px) {
+  header .intro {
+    width: 70%;
+    margin-top: 7.5rem;
+  }
+}
+
 header .intro p.intro-heading {
   color: white;
   text-transform: uppercase;
@@ -76,10 +83,22 @@ header .intro p.intro-heading {
   line-height: 1;
 }
 
+@media (min-width: 768px) {
+  header .intro p.intro-heading {
+    font-size: 4rem;
+  }
+}
+
 header .intro p.intro-heading .heading-bold {
   color: #ff0000;
   font-size: 5rem;
   font-weight: 900;
+}
+
+@media (min-width: 768px) {
+  header .intro p.intro-heading .heading-bold {
+    font-size: 7rem;
+  }
 }
 
 header .intro p.intro-para {
@@ -104,16 +123,28 @@ main .about {
   height: auto;
 }
 
+@media (min-width: 768px) {
+  main .about-first {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  main .about-first .content {
+    width: 90%;
+    margin-left: auto;
+  }
+}
+
 main .picture {
   width: 100%;
 }
 
 main .picture img {
   width: 100%;
-}
-
-main .picture img#sml {
-  width: 90%;
 }
 
 main p.heading {
@@ -133,15 +164,44 @@ main p.para {
   text-transform: capitalize;
 }
 
-main .white-plate {
+main .about-second {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 420px auto;
+      grid-template-columns: 420px auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .about-second .white-plate {
   position: relative;
   width: 40rem;
   right: 140px;
   margin-top: 2rem;
 }
 
-main .white-plate img {
+@media (min-width: 768px) {
+  main .about-second .white-plate {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    right: 30px;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
+main .about-second .white-plate img {
   width: 100%;
+}
+
+main .about-second .about-second-nested .picture {
+  width: 100%;
+}
+
+main .about-second .about-second-nested .picture img#sml {
+  width: 90%;
 }
 
 main .offers {
