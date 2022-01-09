@@ -352,8 +352,13 @@ main {
       }
     }
 
-    #f-icon {
-      width: 2rem;
+    .f-download {
+      #f-icon {
+        width: 2rem;
+      }
+      p.para {
+        font-weight: $fw-medium;
+      }
     }
   }
 }

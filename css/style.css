@@ -392,7 +392,11 @@ main footer ul li a {
   text-decoration: none;
 }
 
-main footer #f-icon {
+main footer .f-download #f-icon {
   width: 2rem;
+}
+
+main footer .f-download p.para {
+  font-weight: 500;
 }
 /*# sourceMappingURL=style.css.map */
