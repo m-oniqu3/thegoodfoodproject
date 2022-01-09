@@ -141,6 +141,7 @@ main {
         display: grid;
         grid-template-columns: 420px auto;
         align-items: center;
+        padding: 1.5rem 0;
       }
 
       .white-plate {
@@ -151,8 +152,8 @@ main {
 
         @include tablet {
           order: 1;
-          right: 30px;
-          transform: rotate(180deg);
+          right: -10px;
+          transform: rotate(90deg);
         }
         img {
           width: 100%;
@@ -162,16 +163,32 @@ main {
       .about-second-nested {
         .picture {
           width: 100%;
-
-          img#sml {
-            width: 90%;
+          @include tablet {
+            margin-top: 5rem;
           }
+
+          // img#sml {
+          //   width: 90%;
+          // }
+        }
+      }
+
+      .section-head {
+        display: grid;
+        @include tablet {
+          grid-template-columns: repeat(2, 1fr);
         }
       }
     }
 
     .offers {
       margin-top: 2rem;
+
+      @include tablet {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+      }
       .offer-item {
         @include flex-reg;
         padding: 1rem 0;

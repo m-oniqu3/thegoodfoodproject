@@ -173,6 +173,7 @@ main .about p.para {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 1.5rem 0;
   }
 }
 
@@ -188,9 +189,9 @@ main .about .about-second .white-plate {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    right: 30px;
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+    right: -10px;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
 }
 
@@ -202,12 +203,36 @@ main .about .about-second .about-second-nested .picture {
   width: 100%;
 }
 
-main .about .about-second .about-second-nested .picture img#sml {
-  width: 90%;
+@media (min-width: 768px) {
+  main .about .about-second .about-second-nested .picture {
+    margin-top: 5rem;
+  }
+}
+
+main .about .about-second .section-head {
+  display: -ms-grid;
+  display: grid;
+}
+
+@media (min-width: 768px) {
+  main .about .about-second .section-head {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 main .about .offers {
   margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  main .about .offers {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
 }
 
 main .about .offers .offer-item {
