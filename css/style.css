@@ -153,6 +153,13 @@ main .about .picture img {
   width: 100%;
 }
 
+@media (min-width: 1024px) {
+  main .about .about-second {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
 @media (min-width: 600px) {
   main .about .about-second {
     display: -ms-grid;
@@ -168,13 +175,8 @@ main .about .picture img {
 
 @media (min-width: 1024px) {
   main .about .about-second {
-    -ms-grid-columns: 550px auto;
-        grid-template-columns: 550px auto;
-    -webkit-column-gap: 1rem;
-            column-gap: 1rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-grid-columns: 480px auto;
+        grid-template-columns: 480px auto;
     margin-bottom: 7rem;
   }
 }
@@ -202,10 +204,10 @@ main .about .about-second .white-plate {
 
 @media (min-width: 1024px) {
   main .about .about-second .white-plate {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
     position: relative;
-    right: -290px;
+    right: -100px;
   }
 }
 
@@ -220,6 +222,14 @@ main .about .about-second .about-second-nested .picture {
 @media (min-width: 600px) {
   main .about .about-second .about-second-nested .picture {
     margin-top: 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  main .about #offers-main {
+    padding: 2rem 0 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
 
@@ -243,6 +253,15 @@ main .about .section-head {
   }
 }
 
+@media (min-width: 1024px) {
+  main .about .section-head {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 3rem;
+            column-gap: 3rem;
+  }
+}
+
 main .about .offers {
   margin-top: 2rem;
 }
@@ -254,6 +273,12 @@ main .about .offers {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  main .about .offers {
+    gap: 2rem;
   }
 }
 
@@ -738,7 +763,7 @@ p.heading {
 
 @media (min-width: 1024px) {
   p.heading {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -755,7 +780,7 @@ p.para {
 
 @media (min-width: 1024px) {
   p.para {
-    font-size: 1.2rem;
+    font-size: 1.125rem;
   }
 }
 
