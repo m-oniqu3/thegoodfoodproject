@@ -14,6 +14,10 @@
   @include tablet {
     width: 90%;
   }
+
+  @include laptop {
+    width: 80%;
+  }
 }
 
 .logo {
@@ -31,6 +35,10 @@ p.heading {
     font-size: $fs-lg-heading;
   }
 
+  @include laptop {
+    font-size: $fs-xl-heading;
+  }
+
   span {
     font-weight: $fw-black;
     color: callColor("red");
@@ -41,6 +49,10 @@ p.para {
   margin: 1rem 0;
   font-size: 0.9rem;
   text-transform: capitalize;
+
+  @include laptop {
+    font-size: $fs-lg-text;
+  }
 }
 button {
   margin: 1rem 0;

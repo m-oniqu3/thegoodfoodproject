@@ -32,6 +32,8 @@ $fs-reg: 1rem;
 $fs-heading: 2.7rem;
 $fs-sml-heading: 1.2rem;
 $fs-lg-heading: 3rem;
+$fs-xl-heading: 4rem;
+$fs-lg-text: 1.2rem;
 
 //Font-Weights
 
@@ -78,7 +80,7 @@ $laptop: 1024px;
   }
 }
 
-@mixin desktop {
+@mixin laptop {
   @media (min-width: #{$laptop}) {
     @content;
   }
