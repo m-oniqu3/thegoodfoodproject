@@ -9,19 +9,31 @@ main {
 
     .about-first {
       padding: 1rem 0;
+      max-width: 1200px;
+      margin: 0 auto;
 
       @include tablet {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
+        justify-content: center;
         column-gap: 1rem;
         padding: 2rem 0;
       }
 
+      @include laptop {
+        padding: 3rem 0;
+      }
+
       .picture {
+        //smax-width: 450px;
         img {
           @include tablet {
             transform: scale(1.2);
+          }
+
+          @include laptop {
+            transform: scale(0.9);
           }
         }
       }
@@ -30,6 +42,11 @@ main {
         @include tablet {
           width: 85%;
           margin-left: auto;
+        }
+
+        @include laptop {
+          width: 75%;
+          margin-right: auto;
         }
       }
     }
@@ -50,6 +67,13 @@ main {
         padding: 1.5rem 0;
       }
 
+      @include laptop {
+        grid-template-columns: 550px auto;
+        column-gap: 1rem;
+        justify-content: center;
+        margin-bottom: 7rem;
+      }
+
       .white-plate {
         margin: 3rem auto;
         padding-left: 1rem;
@@ -66,6 +90,12 @@ main {
           //transform: rotate(90deg);
         }
 
+        @include laptop {
+          transform: scale(1.5);
+          position: relative;
+          right: -290px;
+        }
+
         img {
           width: 100%;
         }
@@ -77,11 +107,14 @@ main {
           @include tablet {
             margin-top: 5rem;
           }
-
-          // img#sml {
-          //   width: 90%;
-          // }
         }
+
+        // .content {
+        //   @include laptop {
+        //     // width: 80%;
+        //     margin-right: auto;
+        //   }
+        // }
       }
     }
 
