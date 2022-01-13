@@ -655,6 +655,12 @@ main .contact {
   height: auto;
 }
 
+@media (min-width: 1024px) {
+  main .contact {
+    padding: 3rem 0;
+  }
+}
+
 @media (min-width: 600px) {
   main .contact .contact-main {
     display: -ms-grid;
@@ -671,12 +677,25 @@ main .contact {
   }
 }
 
+@media (min-width: 1024px) {
+  main .contact .contact-main .contact-head {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
 main .contact .picture {
   width: 100%;
 }
 
 main .contact .picture img {
   width: 100%;
+}
+
+@media (min-width: 1024px) {
+  main .contact form {
+    width: 80%;
+  }
 }
 
 main .contact form label {
@@ -704,6 +723,12 @@ footer {
   height: auto;
   color: white;
   padding: 2rem 0 1rem;
+}
+
+@media (min-width: 1024px) {
+  footer {
+    padding: 2rem 0;
+  }
 }
 
 @media (min-width: 600px) {

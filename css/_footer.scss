@@ -8,6 +8,10 @@ footer {
   color: callColor("white");
   padding: 2rem 0 1rem;
 
+  @include laptop {
+    padding: 2rem 0;
+  }
+
   .footer-main {
     @include tablet {
       display: grid;
