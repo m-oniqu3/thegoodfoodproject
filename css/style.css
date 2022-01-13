@@ -44,6 +44,13 @@ header .intro {
   }
 }
 
+@media (min-width: 1024px) {
+  header .intro {
+    width: 50%;
+    margin-top: 4rem;
+  }
+}
+
 header .intro p.intro-heading {
   color: white;
   text-transform: uppercase;
@@ -76,6 +83,12 @@ header .intro p.intro-para {
   line-height: 1.5;
   font-weight: 500;
   width: 85%;
+}
+
+@media (min-width: 1024px) {
+  header .intro p.intro-para {
+    width: 50%;
+  }
 }
 
 main .about {

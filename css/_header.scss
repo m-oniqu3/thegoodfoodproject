@@ -18,6 +18,11 @@ header {
       margin-top: 7.5rem;
     }
 
+    @include laptop {
+      width: 50%;
+      margin-top: 4rem;
+    }
+
     p.intro-heading {
       color: callColor("white");
       text-transform: uppercase;
@@ -46,6 +51,10 @@ header {
       line-height: 1.5;
       font-weight: $fw-medium;
       width: 85%;
+
+      @include laptop {
+        width: 50%;
+      }
     }
   }
 }
