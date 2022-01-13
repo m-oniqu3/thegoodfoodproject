@@ -20,6 +20,16 @@ main {
           position: relative;
           left: -30px;
         }
+
+        @include laptop {
+          transform: scale(0.8);
+        }
+      }
+    }
+
+    .content {
+      @include laptop {
+        width: 70%;
       }
     }
 
